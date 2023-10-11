@@ -3,7 +3,7 @@
   "defaultProvider": "jsdelivr",
   "libraries": [
     {
-      "library": "@editorjs/editorjs@2.27.2",
+      "library": "@editorjs/editorjs@2.28.0",
       "destination": "wwwroot/lib/editorjs/editorjs/"
     },
     {
