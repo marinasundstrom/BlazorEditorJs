@@ -1,6 +1,11 @@
-namespace BlazorApp.Pages;
+using System.Text.Json.Nodes;
+using EditorJS;
+using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
-public partial class Index
+namespace BlazorApp.Components.Pages;
+
+public partial class Home
 {
     [Inject] public required IJSRuntime JSRuntime { get; set; }
 

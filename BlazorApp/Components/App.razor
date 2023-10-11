@@ -1,31 +1,19 @@
-﻿@using Microsoft.AspNetCore.Components.Web
-@namespace BlazorApp.Pages
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="~/" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css"  />
+    <base href="/" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="BlazorApp.styles.css" />
-    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <HeadOutlet />
 </head>
-<body>
-    @RenderBody()
 
-    <div id="blazor-error-ui">
-        <environment include="Staging,Production">
-            An error has occurred. This application may no longer respond until reloaded.
-        </environment>
-        <environment include="Development">
-            An unhandled exception has occurred. See browser dev tools for details.
-        </environment>
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
+<body>
+    <Routes />
 
     @* <script src="/_content/EditorJS/lib/editorjs-bundle.js" asp-append-version="true"></script> *@
     <script src="/_content/EditorJS/lib/editorjs/editorjs/dist/editorjs.umd.min.js" asp-append-version="true"></script>
@@ -47,6 +35,7 @@
     <script src="/_content/EditorJS/lib/editorjs/raw/dist/bundle.js" asp-append-version="true"></script>
     <script src="/_content/EditorJS/lib/editorjs/underline/dist/bundle.js" asp-append-version="true"></script>
 
-    <script src="_framework/blazor.server.js"></script>
+    <script src="_framework/blazor.web.js"></script>
 </body>
+
 </html>
